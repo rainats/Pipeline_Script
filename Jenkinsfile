@@ -19,7 +19,7 @@ pipeline {
                         label "master"
                     }
                     steps {
-                        echo "Task1 on Agent. Should have the label "Windows_node" but I do not have an agent in Jenkins other than master for now."
+                        echo "Task1 on Agent. Should have the label Windows_node, but I do not have an agent in Jenkins other than master for now."
                     }
                     
                 }
