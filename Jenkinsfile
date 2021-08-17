@@ -16,10 +16,10 @@ pipeline {
             parallel {
                 stage('Test On Windows') {
                     agent {
-                        label "Windows_Node"
+                        label "master"
                     }
                     steps {
-                        echo "Task1 on Agent"
+                        echo "Task1 on Agent. Should have the label "Windows_node" but I do not have an agent in Jenkins other than master for now."
                     }
                     
                 }
